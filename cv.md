@@ -12,7 +12,7 @@ PDF version: [click here]({{ site.baseurl }}{% link CV/CV_Raul_Guarini_Riva2023.
 
 
  * **M.Sc. in Economics** (Jan 2017 - Mar 2019) @ Fundacao Getulio Vargas
-   * **cum laude**
+   * *cum laude*
    * Advisors: Yuri Saporito and Caio Almeida
 
 
