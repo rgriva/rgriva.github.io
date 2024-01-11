@@ -21,17 +21,23 @@
 title: Raul Guarini Riva
 email: raul.riva@kellogg.northwestern.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I'm broadly interested in Macro-Finance, Asset Pricing and Econometrics. 
+  Also, I'm always interested in coding solutions for everyday tasks. 
+  If you have a question, a suggestion or a cool research idea, reach out!
+  
 #baseurl: "https://rgriva.github.io/" # the subpath of your site, e.g. /blog
 url: "https://rgriva.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: raulguarini
 github_username:  rgriva
 instagram_username: raulguarini
 
+header_pages:
+  - cv.md
+  - research.md
+
 # Build settings
 theme: minima
+
 plugins:
   - jekyll-feed
 
