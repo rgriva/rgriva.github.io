@@ -37,7 +37,7 @@ header_pages:
 
 # Build settings
 theme: minima
-google_analytics: G-RXYTBDD1X0
+google_analytics: G-91GNHEPZQ6
 
 plugins:
   - jekyll-feed
