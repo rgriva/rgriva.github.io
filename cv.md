@@ -35,4 +35,4 @@ I helped Viktor Todorov and Ian Dew-Becker with their classes on Investments (*C
 
 I primarily code in both Python and R. However, I also have experience with Matlab.
 
-I am also comfortable using SQL for database handling and UNIX-based terminals for dealing with remote servers. I also remain a die hard fan of Visual Studio Code.
+Additionally, I'm comfortable using SQL for database handling and UNIX-based terminals for dealing with remote servers. I also remain a die hard fan of Visual Studio Code.
