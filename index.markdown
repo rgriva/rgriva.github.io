@@ -8,7 +8,7 @@ exclude: true
 permalink: /
 ---
 <div style="text-align: right">
-<em>In god we trust. All others must bring data.</em>
+<em>In God we trust. All others must bring data.</em>
 <br>
 W. Edwards Deming
 </div>
