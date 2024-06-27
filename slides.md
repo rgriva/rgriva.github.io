@@ -4,6 +4,12 @@ title: Presentations
 permalink: /presentations/
 ---
 
+# How much unspanned volatility can different shocks explain?
+ * [SBFin Meeting 2024]({{ site.baseurl }}{% link slides/SBFin_2024.pdf %}) - this is a ~45 minutes version
+
+
+---
+
 # Asymmetric Violations of the Spanning Hypothesis
  * [IAAE Annual Meeting 2024 - Thessaloniki, Greece]({{ site.baseurl }}{% link slides/IAAE_2024_Raul_Riva.pdf %})
  * [SoFiE 2024 Annual Meeting - Puc-Rio, Brazil]({{ site.baseurl }}{% link slides/SoFiE_2024_Raul_Riva.pdf %})
