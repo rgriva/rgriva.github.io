@@ -5,8 +5,7 @@ permalink: /research/
 ---
 
 # Working Papers
- * [**How much unspanned volatility can different shocks explain?**](https://drive.google.com/file/d/1K-Ll62_Z3NiQwwkU9OP-12PvqoBXbb_s/view?usp=sharing)<br>
-  New draft coming later this Summer!
+ * [**How much unspanned volatility can different shocks explain?**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4878175)<br>
  * [**Asymmetric Violations of the Spanning Hypothesis**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4679966) <br>
   (joint with Gustavo Freire)
  * [**Subjective Beliefs, Disagreement, and Market Return Predictability**](https://ssrn.com/abstract=4751840) <br>
