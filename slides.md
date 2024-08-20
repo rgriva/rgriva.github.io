@@ -4,12 +4,6 @@ title: Presentations
 permalink: /presentations/
 ---
 
-# How much unspanned volatility can different shocks explain?
- * [SBFin Meeting 2024]({{ site.baseurl }}{% link slides/SBFin_2024.pdf %}) - this is a ~45 minutes version
-
-
----
-
 # Asymmetric Violations of the Spanning Hypothesis
  * [IAAE Annual Meeting 2024 - Thessaloniki, Greece]({{ site.baseurl }}{% link slides/IAAE_2024_Raul_Riva.pdf %})
  * [SoFiE 2024 Annual Meeting - Puc-Rio, Brazil]({{ site.baseurl }}{% link slides/SoFiE_2024_Raul_Riva.pdf %})
@@ -19,9 +13,17 @@ permalink: /presentations/
 
 ---
 
+# How much unspanned volatility can different shocks explain?
+ * [SBFin Meeting 2024 - Curitiba, Brazil]({{ site.baseurl }}{% link slides/SBFin_2024.pdf %}) - this is a ~45-minute version
+
+---
+
+# Subjective Beliefs, Disagreement, and Market Return Predictability
+ * [SBFin Meeting 2024 - Curitiba, Brazil]({{ site.baseurl }}{% link slides/IBES_and_Market_Returns.pdf %}) - this is a ~25-minute version
+
+---
 # Intraday Cross-Sectional Distribution of Systematic Risk
  * [SBFin 2022 - Vitória, Brasil]({{ site.baseurl }}{% link slides/SBFin_2022.pdf %})
-
 
 ---
 
