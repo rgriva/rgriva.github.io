@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-PDF version: [click here]({{ site.baseurl }}{% link CV/CV_Raul_Guarini_Riva2023.pdf %})
+PDF version: [click here]({{ site.baseurl }}{% link CV/CV_Raul_Riva.pdf %})
 
 ## Education
  * **PhD in Finance** (Sep 2019 - Apr 2025) @ Northwestern University
