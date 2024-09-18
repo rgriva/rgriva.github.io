@@ -1,0 +1,32 @@
+menu:
+- {name: 'Research', url: '/research'}
+- {name: 'Teaching', url: '/courses'}
+- {name: 'CV', url: '/cv'}
+- {name: 'Contact', url: '/contact'}
+
+# people:
+# - {name: 'Primary Investigator', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/primary-investigator.jpg', url: 'primary-investigator'}
+# - {name: 'Lab Technician', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/lab-technician.jpg', url: 'lab-technician'}
+# - {name: 'Graduate Student', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/graduate-student.jpg', url: 'graduate-student'}
+
+courses:
+- {name: 'Vector Calculus', url: 'vector-calculus'}
+- {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
+- {name: 'Stellar Structures', url: 'stellar-structures'}
+
+social:
+- {icon: 'github', link: 'https://github.com/rgriva'}
+- {icon: 'twitter', link: 'https://twitter.com/raulguarini'}
+- {icon: 'instagram', link: 'https://instagram.com/raulguarini'}
+- {icon: 'linkedin', link: 'https://linkedin.com/in/rgriva'}
+
+contacts:
+- {name: 'Raul Guarini Riva', 
+   title: 'Finance PhD Student', 
+   department: 'Kellogg School of Management', 
+   institution: 'Northwestern University', 
+   institution_address: '2211 N Campus Dr, Evanston, IL 60208', 
+   phone: '(917) 535-5879', 
+   email: 'raul.riva at kellogg.northwestern.edu', 
+   office: 'KGH 4350', 
+   image: 'assets/img/Kellogg_Sunny.jpeg'}

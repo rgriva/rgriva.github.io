@@ -1,19 +1,25 @@
 ---
 layout: page
-title: Research
-permalink: /research/
+title: "Research"
 ---
 
-# Working Papers
- * [**How much unspanned volatility can different shocks explain?**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4878175)<br>
- *Runner-up prize for best Quantitative Finance paper at the 2024 Brazilian Finance Society Meeting*
- * [**Asymmetric Violations of the Spanning Hypothesis**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4679966) <br>
-  (joint with Gustavo Freire)
- * [**Subjective Beliefs, Disagreement, and Market Return Predictability**](https://ssrn.com/abstract=4751840) - Submitted <br>
-  (joint with Felipe Iachan)
+## Working Papers
+ * [**Asymmetric Violations of the Spanning Hypothesis**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4679966) - JMP - **new draft soon** <br>
+   (joint with Gustavo Freire) <br>
+   *We document that the Spanning Hypothesis, which is implied by most macro-finance term structure models, is violated asymmetrically along the U.S. yield curve. After controlling for information in bond prices, we find that macroeconomic variables help predict short-maturity bond returns with statistical and economic significance, while the evidence for long-maturity bonds is much weaker. To understand this pattern, we provide a new decomposition of bond excess returns in terms of innovations of short-, medium- and long-run factors of the yield curve. We use different Machine Learning techniques to show, in fact, that macroeconomic signals only contain unspanned predictive information about the short-run factor. We also provide evidence that the gains are due to improved prediction of the path of short rates, and such predictability is stronger when the Federal Reserve deviates from the Taylor Rule.*
 
-# Publications
- * [**Intraday cross-sectional distributions of systematic risk**](https://www.sciencedirect.com/science/article/abs/pii/S0304407622002032) <br> 
+ * [**How much unspanned volatility can different shocks explain?**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4878175)<br>
+ (Runner-up prize for best Quantitative Finance paper at the 2024 Brazilian Finance Society Meeting) <br>
+ *Affine term structure models generate sharp predictions about the time series evolution of bond prices. In special, they tie the quadratic variation of yields to the cross-section of average yields. I study these conditions for arbitrary portfolios of bonds in a flexible jump-diffusion setting and use jump-robust estimators of volatility to formally test these restrictions. My approach is more general than previous techniques because it does not constrain the dynamics of underlying factors under the physical measure. I also show that two thirds of all unspanned volatility can be captured by a single factor. I investigate if this factor is related to different shocks, such as monetary policy shocks, oil price shocks, and fiscal policy shocks in the US. I find that forward-guidance-type shocks fuel unspanned volatility, although such surprises can explain less than 10% of the unspanned volatility factor. Oil price shocks and unexpected tax changes also drive unspanned volatility, but only a small part of it.*
+ 
+ * [**Subjective Beliefs, Disagreement, and Market Return Predictability**](https://ssrn.com/abstract=4751840) - Submitted on Aug, 2024 <br>
+  (joint with Felipe Iachan) <br>
+  *We jointly evaluate the ability of consensus beliefs about long-term earnings growth and analyst disagreement to predict stock market returns. We bridge the gap between the strands of literature testing theories of belief extrapolation and disagreement-fueled over-pricing. Using IBES analyst forecast data from 1982-2022 and conducting both in-sample and out-of-sample analyses, we find limited evidence that these measures of subjective beliefs predict returns. Our analyses across specifications and sample periods highlight the fragility of prior findings after including relevant controls or extending sample periods.*
+
+
+## Publications
+ * [**Intraday cross-sectional distributions of systematic risk**](https://www.sciencedirect.com/science/article/abs/pii/S0304407622002032) - *Journal of Econometrics, 2023* <br> 
 (joint with Torben Andersen, Martin Thyrsgaard and Viktor Todorov) <br>
-*Journal of Econometrics, 2023* <br>
-Bates-White Prize for the Best Paper at 2022 Annual Meeting of the Society for Financial Econometrics (SoFiE)
+Bates-White Prize for the Best Paper at 2022 Annual Meeting of the Society for Financial Econometrics (SoFiE) <br>
+
+    *We develop a test for the detection of intraday changes in the cross-sectional distribution of assets’ exposure to observable factors. The test is constructed for a panel of high-frequency asset returns, with the size of the cross-section and the sampling frequency increasing simultaneously. It is based on a comparison of the empirical characteristic functions of estimates of the assets’ factor loadings at different parts of the trading day, formed from local blocks of asset returns and the corresponding factor realizations. The limiting behavior of the test statistic is governed by unobservable latent factors in the asset prices. The critical values of the test are constructed on the basis of a novel simulation-based procedure. Empirical implementation of the test to stocks in the S&P 500 index and the five Fama–French factors, as well as the momentum factor, reveals different intraday behavior of the factor loadings: assets’ exposure to size, market and value risks vary systematically over the trading day while the three remaining factors do not exhibit statistically significant intraday variation. Moreover, we find diverse, and for some factors large, reactions in the assets’ factor loadings to major economic or firm specific news releases. Finally, we document that time-varying correlations between the observable risk factors drive a wedge between the time-of-day pattern of market betas, estimated with and without control for the other observable risk factors.*

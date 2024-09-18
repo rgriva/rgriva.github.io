@@ -1,0 +1,27 @@
+/* @import "main"; */
+
+/* for colors across the website */
+a {
+    color: #350165f2; /* Unvisited link color */
+  }
+  
+  a:visited {
+    color: #350165f2; /* Visited link color */
+  }
+  
+  a:hover {
+    color: #350165f2; /* Hovered link color */
+  }
+  
+  /* For the header size */
+  header .fs-4 {
+    font-size: 3.5rem; /* Increase the site title font size */
+  }
+  
+  header span {
+    font-size: 1.25rem; /* Increase the site description font size */
+  }
+  
+  header nav a {
+    font-size: 1.5rem; /* Increase the menu link font size */
+  }
