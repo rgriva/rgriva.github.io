@@ -2,3 +2,6 @@ url: "https://rgriva.github.io" # the base hostname & protocol for your site, e.
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Raul Guarini Riva" # the name of your site, e.g. ACME Corp.
 description: "PhD Student at Northwestern University"
+
+
+google_analytics: G-91GNHEPZQ6
