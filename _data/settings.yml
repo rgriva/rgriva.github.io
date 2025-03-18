@@ -2,6 +2,7 @@ menu:
 - {name: 'Research', url: '/research'}
 - {name: 'Teaching', url: '/courses'}
 - {name: 'CV', url: '/cv'}
+- {name: 'Resources', url: '/resources'}
 - {name: 'Contact', url: '/contact'}
 
 # people:

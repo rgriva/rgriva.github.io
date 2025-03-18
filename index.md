@@ -3,13 +3,13 @@ layout: home
 title: "Home"
 ---
 
-I am a Finance PhD student at the Kellogg School of Management, Northwestern University. I am available for interviews for the 2024-2025 Job Market season!
+I am a Finance PhD student at the Kellogg School of Management, Northwestern University. I will be joining [FGV EPGE](https://epge.fgv.br/) as an Assistant Professor in August, 2025.
 
 My research interests span Asset Pricing, Machine Learning/Econometrics, and Macro-Finance topics. Currently, my work mainly focuses on understanding how **macroeconomic variables** and **different shocks** impact the dynamics of the **American yield curve**.
 
 I also have a secondary agenda testing implications of models with *subjective beliefs* for the predictability of *market returns*.
 
-In the past, I worked on high frequency econometric techniques for factor models. Such work has been featured at the Journal of Econometrics.
+In the past, I also worked on high frequency econometric techniques for factor models.
 
 ### PhD Committee:
 + [Viktor Todorov](https://www.kellogg.northwestern.edu/faculty/todorov/htm/index.htm) (chair, Northwestern University)
