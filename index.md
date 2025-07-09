@@ -9,5 +9,5 @@ My research interests span Asset Pricing, Macro-Finance, and applied Machine Lea
 
 I also have a secondary agenda testing implications of models with *subjective beliefs* for the predictability of *market returns*.
 
-In the past, I also worked on high frequency econometric techniques for factor models.
+In the past, I also worked on high-frequency econometric techniques for factor models.
 
