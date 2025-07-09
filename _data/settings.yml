@@ -23,11 +23,11 @@ social:
 
 contacts:
 - {name: 'Raul Guarini Riva', 
-   title: 'Finance PhD Student', 
-   department: 'Kellogg School of Management', 
-   institution: 'Northwestern University', 
-   institution_address: '2211 N Campus Dr, Evanston, IL 60208', 
-   phone: '(917) 535-5879', 
-   email: 'raul.riva at kellogg.northwestern.edu', 
-   office: 'KGH 4350', 
+   title: 'Assistant Professor', 
+   department: 'EPGE - Brazilian School of Economics and Finance', 
+   institution: 'Fundação Getulio Vargas', 
+   institution_address: 'Praia de Botafogo, 190 - Rio de Janeiro', 
+   phone: '21 97016 1771', 
+   email: 'raul.riva at fgv.br', 
+   office: '1121B', 
    image: 'assets/img/Kellogg_Sunny.jpeg'}
