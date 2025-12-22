@@ -17,4 +17,4 @@ title: "Teaching Activity"
 
 ## Other Classes:
 
-- Short 2-day course at the 47th Meeting of the Brazilian Econometric Society on [Machine Learning in Econ and Finance]([url](https://github.com/rgriva/SBE_2025))
+- Short 2-day course at the 47th Meeting of the Brazilian Econometric Society on [Machine Learning in Econ and Finance](https://github.com/rgriva/SBE_2025)
