@@ -1,27 +1,49 @@
 /* @import "main"; */
 
-/* for colors across the website */
+/* Site-wide link color */
 a {
-    color: #350165f2; /* Unvisited link color */
+  color: #350165f2;
+}
+
+a:visited {
+  color: #350165f2;
+}
+
+a:hover {
+  color: #350165f2;
+}
+
+/* Header typography */
+header > div > a + a span {
+  font-size: 1.25rem;
+}
+
+header nav a {
+  font-size: 1.5rem;
+}
+
+/* Mobile header nav: prevent clipping by allowing wraps */
+@media (max-width: 767.98px) {
+  header > div {
+    text-align: center;
   }
-  
-  a:visited {
-    color: #350165f2; /* Visited link color */
+
+  header > div > a {
+    justify-content: center;
   }
-  
-  a:hover {
-    color: #350165f2; /* Hovered link color */
+
+  header nav.d-inline-flex {
+    display: flex !important;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 0.75rem;
   }
-  
-  /* For the header size */
-  header .fs-4 {
-    font-size: 3.5rem; /* Increase the site title font size */
+
+  header nav a.me-3 {
+    margin-right: 0 !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    font-size: 1.125rem;
   }
-  
-  header span {
-    font-size: 1.25rem; /* Increase the site description font size */
-  }
-  
-  header nav a {
-    font-size: 1.5rem; /* Increase the menu link font size */
-  }
+}
