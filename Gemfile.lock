@@ -1,16 +1,10 @@
-PATH
-  remote: .
-  specs:
-    academic-jekyll-theme (1.0.0)
-      jekyll (~> 4.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     base64 (0.3.0)
-    bigdecimal (3.3.0)
+    bigdecimal (4.0.1)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
     csv (3.3.5)
@@ -74,11 +68,12 @@ PLATFORMS
   arm64-darwin
 
 DEPENDENCIES
-  academic-jekyll-theme!
   base64
   bigdecimal
   csv
+  jekyll (~> 4.3)
   logger
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.5.4

@@ -1,5 +1,4 @@
 ---
-#layout: cv
 layout: page
 title: "CV"
 ---
