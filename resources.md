@@ -5,8 +5,16 @@ title: "Resources for Economists"
 In this page I list some resources I collected over time that I think are useful for Economists, in special if you work either in Macroeconomics or more technical Finance questions. This page reflects 100% my own personal biases. Use/read/cite at your own discretion.
 
 -------------------
-# Coding
-I like writing code and I do it better every day.  We (empirical) economists use several tools and techniques that vary widely across areas, but some general principles apply and should be followed, IMHO.
+
+# AI-Related Stuff
+AI is here to stay (and maybe take our jobs). This is a series of links and resource that help me, and might help you, navigate these challenging and exciting times. May the force be with us.
+
+* [**Claude Code Workflow by Pedro Sant'Anna**](https://psantanna.com/claude-code-my-workflow/workflow-guide.html): details on how Pedro uses Claude Code for research and teaching. Very good if you're new to ```skills``` and agents in general.
+
+-------------------
+
+# Coding Like The Old Days
+I like writing code and I do it better every day (maybe less true since agents took over...).  We (empirical) economists use several tools and techniques that vary widely across areas, but some general principles apply and should be followed, IMHO.
 
 * [**Classes by Jesus Fernandez-Villaverde**](https://www.sas.upenn.edu/~jesusfv/teaching.html): special focus on the *Computational Methods for Economists* course. I don't care if you don't do Macro -- this is useful for anyone looking for the best coding practices.
 * [**The Missing Semester of Your Compute Science Education**](https://missing.csail.mit.edu/): this is a series of online lectures taught by MIT graduate students. They cover the basics of terminals, version control, text editors, etc. Again, it does not really matter what language you use or your field of study -- this is useful for everyone. From time to time I revisit this page.
