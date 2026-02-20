@@ -1,16 +1,61 @@
 /* @import "main"; */
 
-/* Site-wide link color */
+/* Theme tokens */
+:root {
+  --site-bg: #ffffff;
+  --site-text: #212529;
+  --site-muted: #5f6975;
+  --site-link: #350165f2;
+  --site-link-hover: #4a1b79;
+  --site-border: #ced4da;
+  --site-toggle-bg: #ffffff;
+  --site-toggle-hover: #f1f3f5;
+  --site-focus: #8d5be3;
+}
+
+html[data-theme="dark"] {
+  --site-bg: #161a21;
+  --site-text: #e9edf2;
+  --site-muted: #a6b0bc;
+  --site-link: #c9abff;
+  --site-link-hover: #dec9ff;
+  --site-border: #3a4450;
+  --site-toggle-bg: #202833;
+  --site-toggle-hover: #2a3442;
+  --site-focus: #c9abff;
+}
+
+html,
+body {
+  background-color: var(--site-bg);
+  color: var(--site-text);
+}
+
+/* Site-wide links */
 a {
-  color: #350165f2;
+  color: var(--site-link);
 }
 
 a:visited {
-  color: #350165f2;
+  color: var(--site-link);
 }
 
 a:hover {
-  color: #350165f2;
+  color: var(--site-link-hover);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--site-focus);
+  outline-offset: 2px;
+}
+
+.border-top,
+.border-bottom {
+  border-color: var(--site-border) !important;
+}
+
+.text-muted {
+  color: var(--site-muted) !important;
 }
 
 /* Header typography */
@@ -22,6 +67,38 @@ header nav a {
   font-size: 1.5rem;
 }
 
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--site-border);
+  border-radius: 999px;
+  background-color: var(--site-toggle-bg);
+  color: var(--site-text);
+  cursor: pointer;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--site-toggle-hover);
+}
+
+.theme-toggle-btn:focus-visible {
+  outline: 2px solid var(--site-focus);
+  outline-offset: 2px;
+}
+
+.theme-toggle-icon {
+  width: 1.05rem;
+  text-align: center;
+}
+
+.theme-toggle-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
 /* Mobile header nav: prevent clipping by allowing wraps */
 @media (max-width: 767.98px) {
   header > div {
@@ -30,6 +107,10 @@ header nav a {
 
   header > div > a {
     justify-content: center;
+  }
+
+  header .header-controls {
+    width: 100%;
   }
 
   header nav.d-inline-flex {
@@ -45,5 +126,9 @@ header nav a {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
     font-size: 1.125rem;
+  }
+
+  header .theme-toggle-btn {
+    margin-top: 0.5rem;
   }
 }
