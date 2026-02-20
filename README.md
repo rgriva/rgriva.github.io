@@ -12,7 +12,6 @@ Personal website built with Jekyll and hosted on GitHub Pages.
 - Static PDFs:
   - Research/CV docs in `assets/documents/`
   - Talks in `presentations/`
-  - Publication files in `publications/`
 
 ## Common updates
 
