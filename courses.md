@@ -9,7 +9,7 @@ title: "Teaching Activity"
 - [Econometrics Core at FGV EPGE (2025)](https://github.com/epge-classes/econometrics-fgv-2025)
 
 **Finance**:
-- Intro to Asset Pricing (Q1-2026): in construction!
+- [Finance 1 at FGV EPGE (2026)](https://github.com/epge-classes/finance-1-2026)
 
 ## Undergraduate Classes
 
