@@ -7,3 +7,5 @@ vendor
 .DS_Store
 */.DS_Store
 **/.DS_Store
+QR_code.pdf
+QR_code.png
