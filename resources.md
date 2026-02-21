@@ -11,6 +11,7 @@ AI is here to stay (and maybe take our jobs). This is a series of links and reso
 
 * [**Claude Code Workflow by Pedro Sant'Anna**](https://psantanna.com/claude-code-my-workflow/workflow-guide.html): details on how Pedro uses Claude Code for research and teaching. Very good if you're new to ```skills``` and agents in general.
 * [**VS Code Live: Agent Sessions**](https://www.youtube.com/playlist?list=PLj6YeMhvp2S4gpM0lGDd5hIDveC7IsLwv): This is a great series of videos from the Microsoft team behind VS Code, teaching how to customize agents and optimize agentic coding in general, all within VS Code. I am a BIG fan of VS Code and GitHub Copilot, in general.
+* [**Awesome Copilot**](https://github.com/github/awesome-copilot): check out some custom prompts and custom agents created by the GitHub Copilot community. This is really good if you want to customize how you use Copilot.
 
 -------------------
 
