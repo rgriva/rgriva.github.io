@@ -10,6 +10,7 @@ In this page I list some resources I collected over time that I think are useful
 AI is here to stay (and maybe take our jobs). This is a series of links and resource that help me, and might help you, navigate these challenging and exciting times. May the force be with us.
 
 * [**Claude Code Workflow by Pedro Sant'Anna**](https://psantanna.com/claude-code-my-workflow/workflow-guide.html): details on how Pedro uses Claude Code for research and teaching. Very good if you're new to ```skills``` and agents in general.
+* [**VS Code Live: Agent Sessions**](https://www.youtube.com/playlist?list=PLj6YeMhvp2S4gpM0lGDd5hIDveC7IsLwv): This is a great series of videos from the Microsoft team behind VS Code, teaching how to customize agents and optimize agentic coding in general, all within VS Code. I am a BIG fan of VS Code and GitHub Copilot, in general.
 
 -------------------
 
