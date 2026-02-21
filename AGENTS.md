@@ -25,6 +25,23 @@ Quick guide for future sessions of Codex and Claude Code on this repo.
 - Data:
   - `_data/settings.yml` (`menu`, `social`, `contacts`)
 
+## Recent UI/theme contracts (important)
+- Header/mobile behavior:
+  - Mobile (`<768px`) header is intentionally centered (name, subtitle, nav, toggle).
+  - Navigation wraps on mobile to avoid clipping.
+  - Home image is centered when stacked (`<md`) and right-aligned on desktop (`>=md`).
+  - Main files: `_includes/header.html`, `_layouts/home.html`, `assets/css/main.css`.
+- Dark mode is implemented client-side (no plugin):
+  - Root attribute contract: `html[data-theme="light" | "dark"]`.
+  - Persistence key: `localStorage["rgriva-theme"]`.
+  - Toggle button contract: `#theme-toggle` in `_includes/header.html`.
+  - Script: `assets/js/theme-toggle.js` (updates theme, aria attrs, icon/label, persistence, and system-change behavior when no explicit user choice exists).
+  - Early theme bootstrap to prevent flash lives in `_includes/head.html`.
+- Color system:
+  - Theme tokens live in `assets/css/main.css` under `:root` and `html[data-theme="dark"]`.
+  - Keep dark palette conservative and preserve purple brand accents.
+  - Border colors are normalized through `.border-top`/`.border-bottom` overrides.
+
 ## Guardrails
 - Keep Google Analytics working:
   - ID is in `_config.yml` as `google_analytics`.
@@ -37,3 +54,8 @@ Quick guide for future sessions of Codex and Claude Code on this repo.
 - Ignore/build artifacts are already configured in `.gitignore` (`_site`, `vendor`, `.bundle`, etc.).
 - `QR_code.pdf` and `QR_code.png` are intentionally ignored.
 - Before deleting files, check references with `rg`.
+
+## Local env gotcha
+- On this machine there are multiple Rubies; default `/usr/bin/ruby` may fail with Bundler 2.5.4.
+- If needed, prefix commands with Homebrew Ruby:
+  - `PATH="/opt/homebrew/opt/ruby/bin:$PATH" bundle _2.5.4_ ...`
