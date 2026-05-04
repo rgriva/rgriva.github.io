@@ -15,6 +15,7 @@ title: "Teaching Activity"
 
 - Machine Learning for Economics and Finance (2026): in construction!
 
-## Other Classes:
+## Other Stuff:
 
 - Short 2-day course at the 47th Meeting of the Brazilian Econometric Society on [Machine Learning in Econ and Finance](https://github.com/rgriva/SBE_2025)
+- Introductory 3-day course at [FURG](https://www.furg.br/) on AI, LLMs, and Finance (in Portuguese!): [Minicurso AI e Finanças](https://rgriva.github.io/minicurso_FURG_SBFin/)
