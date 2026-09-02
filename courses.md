@@ -17,6 +17,6 @@ title: "Teaching Activity"
 
 ## Other Stuff:
 
-- [2026 TEAT slides](https://rgriva.github.io/2026_TEAT_slides/)
+- Presentation at the FGV EPGE + PUC-Rio Workshop on Applied Econometrics:[2026 TEAT slides](https://rgriva.github.io/2026_TEAT_slides/)
 - Short 2-day course at the 47th Meeting of the Brazilian Econometric Society on [Machine Learning in Econ and Finance](https://github.com/rgriva/SBE_2025)
 - Introductory 3-day course at [FURG](https://www.furg.br/) on AI, LLMs, and Finance (in Portuguese!): [Minicurso AI e Finanças](https://rgriva.github.io/minicurso_FURG_SBFin/)
