@@ -5,3 +5,16 @@ description: "Assistant Professor of Economics"
 
 
 google_analytics: G-91GNHEPZQ6
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: "**/*.pdf"
+    values:
+      sitemap: false
+  - scope:
+      path: "googlec71560e67d5288f9.html"
+    values:
+      sitemap: false
