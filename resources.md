@@ -26,6 +26,7 @@ If you spend enough time on a computer, the terminal stops being scary and start
 * [**Oh My Zsh**](https://ohmyz.sh/): a friendly way to make Zsh more useful, with sensible themes, plugins, and autocomplete. The terminal can have nice things too. I honestly like the colors.
 * [**Homebrew**](https://brew.sh/): the package manager you will probably want five minutes after setting up a Mac. It installs a remarkable amount of useful software with very little drama. Prefer the Homebrew version of almost everything.
 * [**Ghostty**](https://ghostty.org/): a fast and polished terminal emulator. It looks great, stays out of the way, and gives all the other tools above a nice place to live. Very fast, and it's actually a native app on Mac. Linux and Windows are also supported (I think). This is a passion project run by a millionaire -- expect great stuff.
+* [**Glow**](https://github.com/charmbracelet/glow): a terminal-based Markdown reader. I use this to read documentation, tutorials, and even my own notes. It is fast and has a nice interface. I use it all the time because nowadays Markdown is the language of AI.
 
 -------------------
 
