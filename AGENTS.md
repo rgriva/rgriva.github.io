@@ -27,9 +27,12 @@ Quick guide for future sessions of Codex and Claude Code on this repo.
 
 ## Recent UI/theme contracts (important)
 - Header/mobile behavior:
-  - Mobile (`<768px`) header is intentionally centered (name, subtitle, nav, toggle).
-  - Navigation wraps on mobile to avoid clipping.
-  - Home image is centered when stacked (`<md`) and right-aligned on desktop (`>=md`).
+  - Page wrapper is `.site-container` (full width, `max-width: 1140px`) in `_layouts/default.html`.
+  - Below `lg` (`<992px`: phones, foldables, tablets) the header is intentionally stacked and centered (name, subtitle, nav, toggle); side-by-side from `lg` up.
+  - Nav link spacing uses flex `gap` on `header nav` (no per-link margin classes). Nav font shrinks slightly at 992–1199px so the header fits on one row.
+  - Navigation wraps on small screens to avoid clipping.
+  - Home image uses `.home-portrait` (max 400px; 320px when stacked). It is centered when stacked (`<md`) and right-aligned on desktop (`>=md`).
+  - Contact page uses the web-sized `assets/img/Urca_2025_web.jpg` (original kept).
   - Main files: `_includes/header.html`, `_layouts/home.html`, `assets/css/main.css`.
 - Dark mode is implemented client-side (no plugin):
   - Root attribute contract: `html[data-theme="light" | "dark"]`.

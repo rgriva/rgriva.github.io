@@ -1,8 +1,8 @@
-<div class="row g-5 mb-5">
+<div class="row gx-3 gx-md-5 gy-5 mb-5">
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Contact</h3>
     {% for contact in site.data.settings.contacts %}
-    <div class="row g-5 mb-5">
+    <div class="row gx-3 gx-md-5 gy-5 mb-5">
       <div class="col-md-5">
         <h4>{{ contact.name }}</h4>
         <p>{{ contact.title }} | {{ contact.department }}</p>
@@ -11,7 +11,7 @@
         <p>Office: {{ contact.office }}</p>
       </div>
       <div class="col-md-7">
-        <img src="{{ site.github.url }}/{{ contact.image }}" alt="Contact" width="100%">
+        <img src="{{ site.github.url }}/{{ contact.image }}" alt="Contact" class="img-fluid" loading="lazy">
       </div>
     </div>
     {% endfor %}

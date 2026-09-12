@@ -58,13 +58,57 @@ a:focus-visible {
   color: var(--site-muted) !important;
 }
 
+/* Page wrapper: wider content, capped so lines stay readable */
+.site-container {
+  width: 100%;
+  max-width: 1140px;
+}
+
+/* Let long links and inline code wrap on narrow screens */
+.site-content a,
+.site-content code {
+  overflow-wrap: anywhere;
+}
+
 /* Header typography */
+header .header-brand {
+  flex-shrink: 0;
+}
+
 header > div > a + a span {
   font-size: 1.25rem;
 }
 
+header nav {
+  gap: 0.25rem 1.75rem;
+}
+
 header nav a {
   font-size: 1.5rem;
+}
+
+/* Small laptops / tablet landscape: keep the header on one row */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header nav {
+    gap: 0.25rem 1.25rem;
+  }
+
+  header nav a {
+    font-size: 1.25rem;
+  }
+}
+
+/* Home portrait */
+.home-portrait {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 767.98px) {
+  .home-portrait {
+    max-width: 320px;
+  }
 }
 
 .theme-toggle-btn {
@@ -99,8 +143,8 @@ header nav a {
   font-weight: 500;
 }
 
-/* Mobile header nav: prevent clipping by allowing wraps */
-@media (max-width: 767.98px) {
+/* Phones, foldables, tablets: stacked, centered header with wrapping nav */
+@media (max-width: 991.98px) {
   header > div {
     text-align: center;
   }
@@ -118,17 +162,26 @@ header nav a {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.25rem 0.75rem;
+    gap: 0.25rem 1rem;
   }
 
-  header nav a.me-3 {
-    margin-right: 0 !important;
-    padding-top: 0.25rem !important;
-    padding-bottom: 0.25rem !important;
+  header nav a {
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
     font-size: 1.125rem;
   }
 
   header .theme-toggle-btn {
     margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header nav {
+    gap: 0.25rem 1.5rem;
+  }
+
+  header nav a {
+    font-size: 1.25rem;
   }
 }
