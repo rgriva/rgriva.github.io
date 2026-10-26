@@ -4,7 +4,7 @@ title: "Research"
 ---
 
 ## Working Papers
- * **Risk Budgeting Mean-Variance Portfolios** -- new draft coming soon! <br>
+ * [**Risk Budgeting Mean-Variance Portfolios**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7672259) <br>
   (joint with Rodrigo Targino and Bernardo Costa)
 
  * [**Asymmetric Violations of the Spanning Hypothesis**](assets/documents/Yield_ML_Paper.pdf) - R&R at the *Journal of Financial and Quantitative Analysis* <br>
