@@ -6,6 +6,7 @@ title: "Teaching Activity"
 ## MSc/PhD Classes
 
 **Econometrics**:
+- [Econometrics Core at FGV EPGE (2026)](https://epge-classes.github.io/econometrics-fgv-2026/)
 - [Econometrics Core at FGV EPGE (2025)](https://github.com/epge-classes/econometrics-fgv-2025)
 
 **Finance**:
