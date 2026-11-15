@@ -14,7 +14,7 @@ title: "Research"
  * [**How much unspanned volatility can different shocks explain?**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4878175) - R&R at the *Journal of Money, Credit, and Banking* <br>
  Runner-up prize for best Quantitative Finance paper at the 2024 Brazilian Finance Society Meeting <br>
  
- * [**Subjective Beliefs, Disagreement, and Market Return Predictability**](https://ssrn.com/abstract=4751840) - R&R at *Critical Finance Review <br>*
+ * [**Subjective Beliefs, Disagreement, and Market Return Predictability**](https://ssrn.com/abstract=4751840) - Conditionally accepted at *Critical Finance Review* <br>
   (joint with Felipe Iachan) <br>
 
 
