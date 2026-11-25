@@ -9,17 +9,18 @@ Personal website built with Jekyll and hosted on GitHub Pages.
 - Reusable templates: `_layouts/`, `_includes/`
 - Main pages: `index.md`, `research.md`, `courses.md`, `cv.md`, `resources.md`, `contact.md`
 - Static assets: `assets/`
-- Static PDFs:
-  - Research/CV docs in `assets/documents/`
-  - Talks in `presentations/`
+- Content data: `_data/research.yml`, `_data/news.yml`, `_data/teaching.yml`, `_data/resources.yml`
+- Static PDFs: research/CV docs in `assets/documents/`
+- Talks and discussions: the separate `rgriva/presentations` repo (served at `/presentations/`)
 
 ## Common updates
 
-- Update bio/home text: `index.md`
-- Update research and publications text: `research.md`
-- Update teaching links/text: `courses.md`
+- Update bio/home text and research tags: `index.md`
+- Add or change papers: `_data/research.yml`
+- Add news (home page): `_data/news.yml` (set `date`; newest shows first)
+- Update teaching links: `_data/teaching.yml`
 - Update CV download target: `cv.md` and `assets/documents/CV_Raul_Riva.pdf`
-- Update resources list: `resources.md`
+- Update resources list: `_data/resources.yml` (intro text in `resources.md`)
 - Update menu/social/contact info: `_data/settings.yml`
 
 ## Local preview

@@ -1,0 +1,25 @@
+{%- comment -%}
+  One table-of-contents entry: title, dotted leader, meta; then detail lines.
+  Params: item, meta, detail (HTML), award (bool, reads item.award), links (bool)
+{%- endcomment -%}
+{%- assign it = include.item -%}
+{%- assign href = nil -%}
+{%- if it.url -%}
+  {%- if it.url contains '://' -%}{%- assign href = it.url -%}{%- else -%}{%- assign href = it.url | relative_url -%}{%- endif -%}
+{%- endif -%}
+<li>
+  <div class="toc-line">
+    {% if href %}<a href="{{ href }}">{{ it.title | escape }}</a>{% else %}<span class="toc-title">{{ it.title | escape }}</span>{% endif %}
+    <span class="leader" aria-hidden="true"></span>
+    <span class="meta">{{ include.meta }}</span>
+  </div>
+  {%- if include.detail and include.detail != '' %}
+  <p class="venue">{{ include.detail }}</p>
+  {%- endif %}
+  {%- if it.award %}
+  <p class="award"><span aria-hidden="true">&#9733;</span> {{ it.award | escape }}{% if it.award_url %} &middot; <a href="{{ it.award_url }}">check it out</a>{% endif %}</p>
+  {%- endif %}
+  {%- if include.links and href and it.link %}
+  <p class="links"><a href="{{ href }}">[{{ it.link }}]</a></p>
+  {%- endif %}
+</li>

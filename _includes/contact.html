@@ -1,19 +1,20 @@
-<div class="row gx-3 gx-md-5 gy-5 mb-5">
-  <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Contact</h3>
-    {% for contact in site.data.settings.contacts %}
-    <div class="row gx-3 gx-md-5 gy-5 mb-5">
-      <div class="col-md-5">
-        <h4>{{ contact.name }}</h4>
-        <p>{{ contact.title }} | {{ contact.department }}</p>
-        <p>{{ contact.institution }} | {{ contact.institution_address }}</p>
-        <p>Email: {{ contact.email }}</p>
-        <p>Office: {{ contact.office }}</p>
-      </div>
-      <div class="col-md-7">
-        <img src="{{ site.github.url }}/{{ contact.image }}" alt="Contact" class="img-fluid" loading="lazy">
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+{%- for contact in site.data.settings.contacts %}
+<div class="grid-2 contact">
+  <section aria-labelledby="finger">
+    <p class="kicker">01 &mdash; finger raul</p>
+    <h2 id="finger">Get in touch</h2>
+    <dl class="finger">
+      <dt>name</dt><dd>{{ contact.name }}</dd>
+      <dt>title</dt><dd>{{ contact.title }}</dd>
+      <dt>dept</dt><dd>{{ contact.department }}</dd>
+      <dt>inst</dt><dd>{{ contact.institution }}</dd>
+      <dt>addr</dt><dd>{{ contact.institution_address }}</dd>
+      <dt>office</dt><dd>{{ contact.office }}</dd>
+      <dt>mail</dt><dd class="mono-v">{{ contact.email | replace: ' at ', '<span class="at">@</span>' }}</dd>
+    </dl>
+  </section>
+  <figure class="photo">
+    <img src="{{ contact.image | relative_url }}" alt="Sunset over the bay seen from Urca, Rio de Janeiro" loading="lazy">
+  </figure>
 </div>
+{%- endfor %}

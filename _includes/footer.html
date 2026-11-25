@@ -1,9 +1,11 @@
-<footer class="pt-5 my-5 text-muted border-top">
-  <div class="row">
-    <div class="col-md-12 text-end social-media-icons">
-      {% for item in site.data.settings.social %}
-        <a href="{{ item.link }}" class="ms-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a>
-      {% endfor %}
+{%- assign contact = site.data.settings.contacts[0] -%}
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-row">
+      <p class="mono">{{ contact.email | replace: ' at ', '<span class="at">@</span>' }} &middot; office {{ contact.office }} &middot; Praia de Botafogo 190, Rio</p>
+      {% include social.html %}
     </div>
+    <p class="colophon">Proudly built by AI agents, with tokens burnt somewhere between Rio de Janeiro and <span class="keep">Minas Gerais &#x1F60E;&#x1F3D6;&#xFE0F;&#x26F0;&#xFE0F;</span></p>
+    <p>&copy; {{ site.time | date: '%Y' }} Raul Riva</p>
   </div>
 </footer>

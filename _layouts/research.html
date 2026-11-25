@@ -1,17 +1,25 @@
 ---
 layout: default
 ---
-
-<div class="row gx-3 gx-md-5 gy-5 mb-5">
-  <div class="col-md-12">
-    <h2 class="fs-1 fw-bold border-bottom pb-3 mb-5">{{ page.title }}</h2>
-    <div class="text-end fst-italic mb-5">
-        <div class="text-end mb-5">
-            <p class="fst-italic mb-0">"Eu quase que nada não sei. Mas desconfio de muita coisa."</p>
-            <p class="mb-0" style="font-style: normal;">– Guimarães Rosa in "Grande Sertão: Veredas"</p>
-        </div>
-    </div>
-      
-    {{ content }}
-  </div>
-</div>
+{%- assign groups = "working_papers|publications" | split: "|" -%}
+{%- assign headings = "Working papers|Publications" | split: "|" -%}
+{%- for key in groups %}
+{%- assign papers = site.data.research[key] %}
+<section aria-labelledby="{{ key }}">
+  <h2 id="{{ key }}">{{ headings[forloop.index0] }} <span class="count">{{ papers | size }}</span></h2>
+  <ul class="toc">
+    {%- for p in papers %}
+    {%- if p.status == 'pub' -%}
+      {%- capture meta %}<em>{{ p.venue }}</em> &middot; {{ p.year }}{% endcapture -%}
+    {%- elsif p.venue -%}
+      {%- capture meta %}{{ p.status_label | escape }} &middot; <em>{{ p.venue }}</em>{% endcapture -%}
+    {%- else -%}
+      {%- capture meta %}{{ p.status_label | escape }}{% endcapture -%}
+    {%- endif -%}
+    {%- if p.coauthors %}{% capture who %}with {{ p.coauthors }}{% endcapture %}{% else %}{% assign who = 'solo-authored' %}{% endif %}
+    {% include toc-item.html item=p meta=meta detail=who links=true %}
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+{{ content }}

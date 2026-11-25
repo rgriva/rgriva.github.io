@@ -1,0 +1,49 @@
+# Papers shown on /research and counted on the home page, in the order listed here.
+# status: rr | ca | wp | pub
+# venue: full journal name, shown at the end of the dotted leader
+# link: label for the open button (pdf, ssrn, journal...)
+
+working_papers:
+  - title: "Risk Budgeting Mean-Variance Portfolios"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7672259"
+    link: ssrn
+    coauthors: "Rodrigo Targino and Bernardo Costa"
+    status: wp
+    status_label: "Working paper"
+
+  - title: "Subjective Beliefs, Disagreement, and Market Return Predictability"
+    url: "https://ssrn.com/abstract=4751840"
+    link: ssrn
+    coauthors: "Felipe Iachan"
+    status: ca
+    status_label: "Cond. accepted"
+    venue: "Critical Finance Review"
+
+  - title: "How much unspanned volatility can different shocks explain?"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4878175"
+    link: ssrn
+    status: rr
+    status_label: "R&R"
+    venue: "Journal of Money, Credit, and Banking"
+    award: "Runner-up prize for best Quantitative Finance paper at the 2024 Brazilian Finance Society Meeting"
+
+  - title: "Asymmetric Violations of the Spanning Hypothesis"
+    url: /assets/documents/Yield_ML_Paper.pdf
+    link: pdf
+    coauthors: "Gustavo Freire"
+    status: rr
+    status_label: "R&R"
+    venue: "Journal of Financial and Quantitative Analysis"
+    award: "Best Paper Award at the 2026 Asian Meeting of the Econometric Society (AMES)"
+    award_url: "https://www.linkedin.com/posts/rgriva_the-midwest-is-the-best-but-the-middle-east-activity-7421332502117601281-zMJL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA0tDXsBbhnZif7Gd20bvuz4PaqgmYVF3tQ"
+
+publications:
+  - title: "Intraday cross-sectional distributions of systematic risk"
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S0304407622002032"
+    link: journal
+    coauthors: "Torben Andersen, Martin Thyrsgaard and Viktor Todorov"
+    status: pub
+    status_label: "Published"
+    venue: "Journal of Econometrics"
+    year: 2023
+    award: "Bates-White Prize for the Best Paper at the 2022 Annual Meeting of the Society for Financial Econometrics (SoFiE)"

@@ -1,0 +1,51 @@
+# "News" panel on the home page, sorted newest first by `date`.
+# `date` is when the change landed on the site (the commit that recorded it); `commit` is that commit.
+# tag: award | rr | ca | wp | pub | teaching
+
+- tag: teaching
+  label: "Teaching"
+  title: "Econometrics Core and Finance 1 at FGV EPGE"
+  detail: "2026 MSc/PhD courses, materials on GitHub"
+  url: /courses
+  date: 2026-11-15 20:12:04 -0300
+  commit: d742bc2
+
+- tag: ca
+  label: "Cond. accepted"
+  title: "Conditionally accepted at Critical Finance Review"
+  detail: "Subjective Beliefs, Disagreement, and Market Return Predictability (with Felipe Iachan)"
+  url: /research
+  date: 2026-11-15 20:01:29 -0300
+  commit: fb5e7d7
+
+- tag: rr
+  label: "R&R"
+  title: "R&R at the Journal of Money, Credit, and Banking"
+  detail: "How much unspanned volatility can different shocks explain?"
+  url: /research
+  date: 2026-10-29 10:32:13 -0300
+  commit: 56b5f77
+
+- tag: wp
+  label: "On SSRN"
+  title: "Risk Budgeting Mean-Variance Portfolios"
+  detail: "New working paper with Rodrigo Targino and Bernardo Costa"
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7672259"
+  date: 2026-10-26 15:31:47 -0300
+  commit: 2776bf0
+
+- tag: rr
+  label: "R&R"
+  title: "R&R at the Journal of Financial and Quantitative Analysis"
+  detail: "Asymmetric Violations of the Spanning Hypothesis"
+  url: /research
+  date: 2026-05-07 15:38:01 -0300
+  commit: 6ea6de0
+
+- tag: award
+  label: "Award"
+  title: "Best Paper Award at AMES 2026"
+  detail: "Asymmetric Violations of the Spanning Hypothesis (with Gustavo Freire)"
+  url: "https://www.linkedin.com/posts/rgriva_the-midwest-is-the-best-but-the-middle-east-activity-7421332502117601281-zMJL"
+  date: 2026-02-20 18:33:54 -0300
+  commit: 4b379ae

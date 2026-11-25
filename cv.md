@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: cv
 title: "CV"
+cwd: cv
+prompt: "open CV_Raul_Riva.pdf"
 ---
-Please [click here](assets/documents/CV_Raul_Riva.pdf).

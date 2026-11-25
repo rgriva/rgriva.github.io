@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{%- for g in site.data.teaching %}
+<section aria-labelledby="{{ g.id }}">
+  <p class="kicker">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }} &mdash; {{ g.id }}</p>
+  <h2 id="{{ g.id }}">{{ g.title }} <span class="count">{{ g.items | size }}</span></h2>
+  <ul class="toc">
+    {%- for i in g.items %}
+    {%- if i.year %}{% assign meta = i.year | append: '' %}{% else %}{% assign meta = '' %}{% endif %}
+    {% include toc-item.html item=i meta=meta detail=i.note links=true %}
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+{{ content }}

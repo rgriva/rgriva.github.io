@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{%- assign pdf = '/assets/documents/CV_Raul_Riva.pdf' | relative_url -%}
+<section aria-labelledby="cv-file">
+  <p class="kicker">01 &mdash; CV_Raul_Riva.pdf</p>
+  <h2 id="cv-file">Curriculum vitae</h2>
+  <div class="cv-actions">
+    <a class="btn btn-primary" href="{{ pdf }}">open pdf &#8599;</a>
+    <a class="btn" href="{{ pdf }}" download>download</a>
+  </div>
+  {{ content }}
+  <object class="pdf-embed" data="{{ pdf }}#view=FitH" type="application/pdf" aria-label="CV preview">
+    <p class="muted">Your browser can't preview PDFs here. <a href="{{ pdf }}">Open the CV</a> instead.</p>
+  </object>
+</section>

@@ -1,24 +1,13 @@
 ---
 layout: research
 title: "Research"
+cwd: research
+prompt: "ls -t papers/"
+lede: "Asset pricing · macro-finance · econometrics"
+curve: true
+epigraph:
+  text: "Eu quase que nada não sei. Mas desconfio de muita coisa."
+  author: "Guimarães Rosa"
+  source: "Grande Sertão: Veredas"
 ---
-
-## Working Papers
- * [**Risk Budgeting Mean-Variance Portfolios**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7672259) <br>
-  (joint with Rodrigo Targino and Bernardo Costa)
-
- * [**Asymmetric Violations of the Spanning Hypothesis**](assets/documents/Yield_ML_Paper.pdf) - R&R at the *Journal of Financial and Quantitative Analysis* <br>
-   (joint with Gustavo Freire) <br>
-   Winner of Best Paper Award at the 2026 Asian Meeting of the Econometric Society (AMES) -- [Check it out!](https://www.linkedin.com/posts/rgriva_the-midwest-is-the-best-but-the-middle-east-activity-7421332502117601281-zMJL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA0tDXsBbhnZif7Gd20bvuz4PaqgmYVF3tQ)
-
- * [**How much unspanned volatility can different shocks explain?**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4878175) - R&R at the *Journal of Money, Credit, and Banking* <br>
- Runner-up prize for best Quantitative Finance paper at the 2024 Brazilian Finance Society Meeting <br>
- 
- * [**Subjective Beliefs, Disagreement, and Market Return Predictability**](https://ssrn.com/abstract=4751840) - Conditionally accepted at *Critical Finance Review* <br>
-  (joint with Felipe Iachan) <br>
-
-
-## Publications
- * [**Intraday cross-sectional distributions of systematic risk**](https://www.sciencedirect.com/science/article/abs/pii/S0304407622002032) - *Journal of Econometrics, 2023* <br> 
-(joint with Torben Andersen, Martin Thyrsgaard and Viktor Todorov) <br>
-Bates-White Prize for the Best Paper at 2022 Annual Meeting of the Society for Financial Econometrics (SoFiE) <br>
+<!-- Papers live in _data/research.yml -->

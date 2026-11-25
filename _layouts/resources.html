@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="intro">
+  <div class="prose">
+    {{ content }}
+  </div>
+  <nav class="jump" aria-label="Sections">
+    {%- for s in site.data.resources %}
+    <a href="#{{ s.id }}">{{ s.id }}</a>
+    {%- endfor %}
+  </nav>
+</section>
+
+{%- for s in site.data.resources %}
+<section class="res" id="{{ s.id }}" aria-labelledby="{{ s.id }}-title">
+  <div class="res-head">
+    <p class="kicker">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }} &mdash; {{ s.id }}</p>
+    <h2 id="{{ s.id }}-title">{{ s.title }}</h2>
+    <div class="blurb">{{ s.blurb | markdownify }}</div>
+  </div>
+  <ul class="res-list">
+    {%- for i in s.items %}
+    <li><a href="{{ i.url }}">{{ i.name }}</a>{{ i.note | markdownify | replace: '<p>', '<span class="note">' | replace: '</p>', '</span>' }}</li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}

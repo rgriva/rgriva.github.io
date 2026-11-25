@@ -1,0 +1,30 @@
+{%- comment -%} Drawable yield curve, same as rgriva.github.io/presentations. Driven by assets/js/curve.js. {%- endcomment -%}
+<figure class="curve" id="curve">
+  <svg viewBox="0 0 360 196" role="group" aria-label="A yield curve you can redraw. Drag the points, or focus one and use the arrow keys. Double-click to reset.">
+    <line class="gridline" x1="44" y1="108" x2="344" y2="108"/>
+    <line class="gridline" x1="44" y1="52" x2="344" y2="52"/>
+    <path class="area" d=""/>
+    <line class="axis" x1="44" y1="164" x2="344" y2="164"/>
+    <line class="axis" x1="44" y1="20" x2="44" y2="164"/>
+    <path class="line" pathLength="1" d=""/>
+    <text x="38" y="167.5" text-anchor="end">3.0</text>
+    <text x="38" y="111.5" text-anchor="end">4.0</text>
+    <text x="38" y="55.5" text-anchor="end">5.0</text>
+    <text class="ylab" x="50" y="14">y(&#964;), %</text>
+    <text x="44" y="180" text-anchor="middle">3M</text>
+    <text x="130.9" y="180" text-anchor="middle">1Y</text>
+    <text x="174.3" y="180" text-anchor="middle">2Y</text>
+    <text x="231.7" y="180" text-anchor="middle">5Y</text>
+    <text x="275.2" y="180" text-anchor="middle">10Y</text>
+    <text x="344" y="180" text-anchor="middle">30Y</text>
+    <text x="344" y="195" text-anchor="end">maturity &#964;</text>
+    <rect class="hit-bg" x="44" y="20" width="300" height="148"/>
+    {%- assign labels = "3-month|1-year|2-year|5-year|10-year|30-year" | split: "|" %}
+    {%- for l in labels %}
+    <g class="pt-g"><circle class="halo" r="5" style="animation-delay: {{ forloop.index0 | times: 0.25 }}s"/><circle class="ring" r="9"/><circle class="pt" r="3.5"/><circle class="hit" r="20" tabindex="0" role="slider" aria-orientation="vertical" aria-valuemin="3" aria-valuemax="5.5" aria-label="{{ l }} yield"/></g>
+    {%- endfor %}
+    <g class="tip" style="display: none" aria-hidden="true"><rect rx="3" height="16"/><text text-anchor="middle"></text></g>
+  </svg>
+  <p class="readout">10Y&ndash;3M: <b data-spread>&minus;0.16 pp</b> &middot; <span data-shape>U-shaped</span></p>
+</figure>
+<script defer src="{{ '/assets/js/curve.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

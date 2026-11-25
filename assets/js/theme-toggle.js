@@ -1,97 +1,53 @@
+// Light/dark toggle. Contract: html[data-theme], localStorage["rgriva-theme"], #theme-toggle.
+// The same key is read by rgriva.github.io/presentations, so the choice carries over.
+// Without an explicit choice the site follows the system setting, live.
 (function () {
-  var storageKey = "rgriva-theme";
+  var key = "rgriva-theme";
   var root = document.documentElement;
-  var mediaQuery = window.matchMedia
-    ? window.matchMedia("(prefers-color-scheme: dark)")
-    : null;
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var explicit = false;
 
-  function getSystemTheme() {
-    return mediaQuery && mediaQuery.matches ? "dark" : "light";
-  }
+  try {
+    explicit = /^(light|dark)$/.test(localStorage.getItem(key) || "");
+  } catch (e) {}
 
-  function getStoredTheme() {
-    try {
-      var storedTheme = localStorage.getItem(storageKey);
-      return storedTheme === "light" || storedTheme === "dark"
-        ? storedTheme
-        : null;
-    } catch (error) {
-      return null;
-    }
-  }
-
-  function setStoredTheme(theme) {
-    try {
-      localStorage.setItem(storageKey, theme);
-    } catch (error) {
-      /* Ignore persistence failures in restricted contexts. */
-    }
-  }
-
-  function updateToggle(theme) {
-    var toggle = document.getElementById("theme-toggle");
-    if (!toggle) {
-      return;
-    }
-
-    var isDark = theme === "dark";
-    var icon = toggle.querySelector(".theme-toggle-icon");
-    var label = toggle.querySelector(".theme-toggle-label");
-
-    toggle.setAttribute("aria-pressed", String(isDark));
-    toggle.setAttribute(
-      "aria-label",
-      isDark ? "Switch to light mode" : "Switch to dark mode"
-    );
-
-    if (icon) {
-      icon.className =
-        "fas " + (isDark ? "fa-sun" : "fa-moon") + " theme-toggle-icon";
-    }
-
-    if (label) {
-      label.textContent = isDark ? "Light mode" : "Dark mode";
-    }
-  }
-
-  function applyTheme(theme) {
+  function apply(theme) {
+    var dark = theme === "dark";
     root.dataset.theme = theme;
     root.style.colorScheme = theme;
-    updateToggle(theme);
-  }
-
-  var storedTheme = getStoredTheme();
-  var hasExplicitPreference = storedTheme !== null;
-  var initialTheme =
-    root.dataset.theme === "light" || root.dataset.theme === "dark"
-      ? root.dataset.theme
-      : hasExplicitPreference
-        ? storedTheme
-        : getSystemTheme();
-
-  applyTheme(initialTheme);
-
-  var toggle = document.getElementById("theme-toggle");
-  if (toggle) {
-    toggle.addEventListener("click", function () {
-      var nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
-      hasExplicitPreference = true;
-      setStoredTheme(nextTheme);
-      applyTheme(nextTheme);
+    document.querySelectorAll("[data-theme-toggle]").forEach(function (button) {
+      button.setAttribute("aria-pressed", String(dark));
+      button.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+      var label = button.querySelector("[data-theme-label]");
+      if (label) label.textContent = dark ? "Light mode" : "Dark mode";
     });
   }
 
-  if (mediaQuery) {
-    var handleSystemThemeChange = function (event) {
-      if (!hasExplicitPreference) {
-        applyTheme(event.matches ? "dark" : "light");
-      }
-    };
+  apply(root.dataset.theme === "dark" ? "dark" : "light");
 
-    if (typeof mediaQuery.addEventListener === "function") {
-      mediaQuery.addEventListener("change", handleSystemThemeChange);
-    } else if (typeof mediaQuery.addListener === "function") {
-      mediaQuery.addListener(handleSystemThemeChange);
-    }
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest("[data-theme-toggle]")) return;
+    var next = root.dataset.theme === "dark" ? "light" : "dark";
+    explicit = true;
+    try {
+      localStorage.setItem(key, next);
+    } catch (e) {}
+    apply(next);
+  });
+
+  if (mq) {
+    var onSystemChange = function (event) {
+      if (!explicit) apply(event.matches ? "dark" : "light");
+    };
+    if (mq.addEventListener) mq.addEventListener("change", onSystemChange);
+    else if (mq.addListener) mq.addListener(onSystemChange);
   }
+
+  // Follow changes made in other tabs.
+  window.addEventListener("storage", function (event) {
+    if (event.key === key && /^(light|dark)$/.test(event.newValue || "")) {
+      explicit = true;
+      apply(event.newValue);
+    }
+  });
 })();

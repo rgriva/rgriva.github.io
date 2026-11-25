@@ -1,23 +1,8 @@
 ---
-layout: page
-title: "Teaching Activity"
+layout: teaching
+title: "Teaching"
+cwd: teaching
+prompt: "ls courses/"
+lede: "MSc/PhD and undergraduate courses at FGV EPGE, plus short courses"
 ---
-
-## MSc/PhD Classes
-
-**Econometrics**:
-- [Econometrics Core at FGV EPGE (2026)](https://epge-classes.github.io/econometrics-fgv-2026/)
-- [Econometrics Core at FGV EPGE (2025)](https://github.com/epge-classes/econometrics-fgv-2025)
-
-**Finance**:
-- [Finance 1 at FGV EPGE (2026)](https://github.com/epge-classes/finance-1-2026)
-
-## Undergraduate Classes
-
-- Machine Learning for Economics and Finance (2026): in construction!
-
-## Other Stuff:
-
-- Presentation at the FGV EPGE + PUC-Rio Workshop on Applied Econometrics:[2026 TEAT slides](https://rgriva.github.io/2026_TEAT_slides/)
-- Short 2-day course at the 47th Meeting of the Brazilian Econometric Society on [Machine Learning in Econ and Finance](https://github.com/rgriva/SBE_2025)
-- Introductory 3-day course at [FURG](https://www.furg.br/) on AI, LLMs, and Finance (in Portuguese!): [Minicurso AI e Finanças](https://rgriva.github.io/minicurso_FURG_SBFin/)
+<!-- Courses live in _data/teaching.yml -->

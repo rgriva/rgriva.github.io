@@ -1,0 +1,41 @@
+# Panels on /courses. Each group is one panel; `course` names are counted on the home page.
+
+- id: msc-phd
+  title: "MSc/PhD Classes"
+  items:
+    - title: "Econometrics Core at FGV EPGE"
+      course: econometrics
+      year: 2026
+      url: "https://epge-classes.github.io/econometrics-fgv-2026/"
+      link: site
+    - title: "Econometrics Core at FGV EPGE"
+      course: econometrics
+      year: 2025
+      url: "https://github.com/epge-classes/econometrics-fgv-2025"
+      link: github
+    - title: "Finance 1 at FGV EPGE"
+      course: finance-1
+      year: 2026
+      url: "https://github.com/epge-classes/finance-1-2026"
+      link: github
+
+- id: undergrad
+  title: "Undergraduate Classes"
+  items:
+    - title: "Machine Learning for Economics and Finance"
+      course: ml-econ-finance
+      year: 2026
+      note: "In construction!"
+
+- id: other
+  title: "Other Stuff"
+  items:
+    - title: "Machine Learning in Econ and Finance"
+      note: "Short 2-day course at the 47th Meeting of the Brazilian Econometric Society"
+      year: 2025
+      url: "https://github.com/rgriva/SBE_2025"
+      link: github
+    - title: "Minicurso AI e Finanças"
+      note: "Introductory 3-day course at FURG on AI, LLMs, and Finance (in Portuguese!)"
+      url: "https://rgriva.github.io/minicurso_FURG_SBFin/"
+      link: site

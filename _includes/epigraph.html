@@ -1,0 +1,5 @@
+{%- assign ep = include.epigraph -%}
+<figure class="epigraph">
+  <blockquote>&ldquo;{{ ep.text }}&rdquo;</blockquote>
+  <figcaption>&mdash; {% if ep.url %}<a href="{{ ep.url }}">{{ ep.author }}</a>{% else %}{{ ep.author }}{% endif %}{% if ep.source %}, <cite>{{ ep.source }}</cite>{% endif %}</figcaption>
+</figure>
