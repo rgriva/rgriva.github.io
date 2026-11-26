@@ -3,7 +3,6 @@ layout: research
 title: "Research"
 cwd: research
 prompt: "ls -t papers/"
-lede: "Asset pricing · macro-finance · econometrics"
 curve: true
 epigraph:
   text: "Eu quase que nada não sei. Mas desconfio de muita coisa."

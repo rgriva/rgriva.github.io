@@ -22,9 +22,12 @@
     {%- endif %}
   </div>
   {%- if page.portrait %}
-  <figure class="portrait">
+  <div class="portrait">
     <img src="{{ page.portrait | relative_url }}" alt="Portrait of Raul Guarini Riva" width="400" height="500">
-  </figure>
+    {%- if page.epigraph and page.curve != true %}
+    {% include epigraph.html epigraph=page.epigraph %}
+    {%- endif %}
+  </div>
   {%- elsif page.curve %}
   {% include curve.html %}
   {%- elsif page.epigraph %}
